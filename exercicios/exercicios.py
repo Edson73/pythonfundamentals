@@ -120,8 +120,32 @@ dados = {
 
 # criar uma função que pega o conteudo da variavel texto
 # e deixa em caixa alta
-texto = 'Eu sou um cérebro, Watson. O resto é mero apêndice.'
-def upperTexto(text):
-    return text.upper()
+# texto = 'Eu sou um cérebro, Watson. O resto é mero apêndice.'
+# def upperTexto(text):
+#     return text.upper()
 
-print(upperTexto(texto))
+# print(upperTexto(texto))
+
+
+# Crie uma função que peça 2 números e retorne o maior
+# se o valor for igual print "valores iguais"
+# guarde uma variável e print
+
+# def nMaior(x, y):
+#     if x == y:
+#         return 'valores iguais'
+#     else:
+#         return max(x, y)
+
+# var = nMaior(12,12)
+# print(var)
+
+
+
+# Crie uma função que receba um número indefinido de valores numéricos
+# com *args e retorne os valores ordenados de forma decrescente.
+
+# def ordenados(*valores):
+#     return sorted(valores, reverse=True)
+
+
