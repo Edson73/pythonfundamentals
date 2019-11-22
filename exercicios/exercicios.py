@@ -149,3 +149,76 @@ dados = {
 #     return sorted(valores, reverse=True)
 
 
+
+
+# crie uma classe que represente um automovel com os atributos
+# ano de fabricação
+# marca
+# preço
+# métodos get_ano, get_marca e get_preco
+
+class Automovel():
+    '''Classe que representa um automovel'''
+    def __init__(self, ano, marca, preco):
+        self.ano = ano
+        self.marca = marca
+        self.preco = preco
+
+    def get_ano(self):
+        print(self.ano)
+
+    def get_marca(self):
+        print(self.marca)
+
+    def get_preco(self):
+        print(self.preco)
+
+# crie uma classe Moto que terá
+# o atributo tipo e herdará os atributos da classe automovel
+# e os métodos: ligar, desligar, acelerar, frear
+# obs.: lembre-se que a moto só pode ligar se estiver desligada e desligar quando ligada
+# acelerar e frear também só ligada
+
+
+
+
+ligada = False
+class Moto(Automovel):
+    '''Classe que representa uma Moto'''
+    def __init__(self, ano, marca, preco, tipo='Moto'):
+        super().__init__(ano, marca, preco)
+        self.tipo = tipo
+
+    def Ligar(self):
+        self.ligada = False
+        try:
+            if self.ligada == False:
+                print('Ligando...')
+                print('Ligada...')
+                ligada = True
+            else:
+                raise TypeError('Ligue a moto')
+        except TypeError as motoDesligada:
+            print('motoDesligada')
+
+    def desligar(self):
+        self.ligada = True
+        try:
+            if self.ligada == True:
+                print('Desligando...')
+                print('Desligada...')
+                ligada = False
+            else:
+                raise TypeError('Desligue a moto')
+        except TypeError as motoLigada:
+            print('motoLigada')
+            
+    def acelerar(self):
+        try:
+            if self.ligada == False:
+                print('Acelerou...')
+
+    def Frear(self):
+        try:
+            if self.ligada == True:
+                print('Freou...')
